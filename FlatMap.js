@@ -1,9 +1,10 @@
 var arr=[1,2,3,4,5];
-arr.forEach((x, i) => console.log(x, i))
-console.log(arr)
+
+let arr3=arr.forEach((x, i) => console.log(x, i))
+console.log("arr foreach"+arr3)
 
 var arrMap=arr.map(x=>[x,x*2]);
-console.log(arrMap)
+console.log("arr map method"+arrMap)
 
-// var arrFlatMap=arr.flatMap(x=>[x,x*2]);
-// console.log(arr.flatMap(x=>[x,x*2]))
+var arrFlatMap=arr.flatMap(x=>[x, x*2]);
+console.log("arr flat map method"+arrFlatMap)
